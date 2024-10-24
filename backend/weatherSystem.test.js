@@ -14,7 +14,7 @@ describe("Weather Monitoring System Tests", () => {
   });
 
   test("System Setup: Verify system starts and connects to OpenWeatherMap API", async () => {
-    const validApiKey = "da3e1253bbf31db709fe722c1a4c5bd5"; // Set your valid API key
+    const validApiKey = "YOUR_API_KEY"; // Set your valid API key
     axios.get.mockResolvedValueOnce({ data: { weather: [], main: {} } });
 
     const response = await getWeatherData("London", validApiKey);
